@@ -13,7 +13,7 @@ steps:
 - task: Maven@3
 - publish: $(System.DefaultWorkingDirectory)/bin/WebApp
   artifact: WebApp
-  inputs:
+ inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
