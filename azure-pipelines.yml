@@ -10,10 +10,10 @@ pool:
   vmImage: 'ubuntu-latest' # other options: 'macOS-latest', 'windows-latest'
 
 steps:
-- task: Maven@3
 - publish: $(System.DefaultWorkingDirectory)/bin/WebApp
   artifact: WebApp
- inputs:
+- task: Maven@3
+  inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
